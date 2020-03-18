@@ -1,0 +1,13 @@
+.container {
+    margin: 100px auto 150px auto;
+    width: 1050px;
+}
+
+.container > h1 {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
