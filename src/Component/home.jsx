@@ -2,6 +2,8 @@ import React from "react";
 import Car from "./car";
 import "../css/home.css";
 import WheelsController from "../Component/wheelsController";
+import Header from '../Component/header';
+import Footer from '../Component/footer';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -29,6 +31,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
+         <Header></Header>
         <div className="container">
           <h1>Range Per Charge</h1>
           <Car wheels_21={this.state.wheels_21}></Car>
@@ -39,6 +42,7 @@ export default class Home extends React.Component {
               wheels_21={this.state.wheels_21}></WheelsController>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     );
   }
